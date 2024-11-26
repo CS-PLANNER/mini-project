@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title></title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    #sem{
+        width:100px;
+        height:100px;
+        margin:10px;
+    }
+    #body{
+      background-color: #e6e6fa;
+    }
+    #card
+    {
+      margin-left:50px;
+      margin-top:10px;
+    }
+    input[type="submit"]{
+margin:5px;
+    }
+  </style>
+</head>
+<body id="body">
+  <div class="card" style="width:400px"  id="card">
+    <img class="card-img-top" src="profile.jpeg" alt="Card image" style="width:40%">
+    </div>
+<div class="container">
+  <h2>STUDENT DETAILS</h2>
+  <form action="/action_page.php" method="post">
+    
+    <div class="form-group">
+    <div class="col-sm-2">
+      <label for="name">Name</label>
+      <input type="text" class="form-control" id="name" placeholder="Enter name" name="name">
+    </div>
+    </div>
+    <div class="form-group">
+    <div class="col-sm-2">
+      <label for="number">Register Number</label>
+      <input type="number" class="form-control" id="number" placeholder="Enter register number" name="number">
+    </div>
+    </div>
+    <div class="form-group">
+      <div class="col-sm-2">
+        <label for="date of birth">DOB</label>
+        <input type="date" class="form-control" id="date" placeholder="Enter DOB" name="date">
+    </div>
+    </div>
+    <div class="form-group">
+      <div class="col-sm-2">
+        <label for="number">Phone Number</label>
+        <input type="number" class="form-control" id="number" placeholder="Enter phone number" name="number">
+      </div>
+      </div>
+      <div class="form-group">
+        <div class="col-sm-2">
+        <label for="number">Duration</label>
+        <input type="number" class="form-control" id="number" placeholder="Enter Duration" name="number">
+      </div>
+      </div>
+</div>
+      <div class="container">
+        <h2>MY PERFORMANCE</h2>
+        <form action="/action_page.php">
+      <form action="upload.php" method="post" enctype="multipart/form-data">
+          <label for="sem 1">Semester 1</label><input type="file" value="+" name="submit" id="sem 1"><input type="submit" value="Upload"><br>
+          <label for="sem 2">Semester 2</label><input type="file" value="+" name="submit" id="sem 2"><input type="submit" value="Upload"><br>
+          <label for="sem 3">Semester 3</label><input type="file" value="+" name="submit" id="sem 3"><input type="submit" value="Upload"><br>
+          <label for="sem 4">Semester 4</label><input type="file" value="+" name="submit" id="sem 4"><input type="submit" value="Upload"><br>
+          <label for="sem 5">Semester 5</label><input type="file" value="+" name="submit" id="sem 5"><input type="submit" value="Upload"><br>
+        </form>
+      </div>
+      </body>
+      </html>
